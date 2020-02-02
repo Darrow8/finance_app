@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1096162942360-t98abv0launtd1j9j98sacv3j43enflv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1096162942360-t98abv0launtd1j9j98sacv3j43enflv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAQfGHy71veCtViJ6ZJg7O-HJLUU4A3Prc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1096162942360</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Darrow-Hartman.finance-app2</string>
+	<key>PROJECT_ID</key>
+	<string>financeapp-d86c6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>financeapp-d86c6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1096162942360:ios:56e0ff8bb2e439d0719fed</string>
+	<key>DATABASE_URL</key>
+	<string>https://financeapp-d86c6.firebaseio.com</string>
+</dict>
+</plist>

@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		22A3833923BC3441006AC9B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3833823BC3441006AC9B4 /* AppDelegate.swift */; };
 		22A3833B23BC3441006AC9B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3833A23BC3441006AC9B4 /* SceneDelegate.swift */; };
-		22A3833D23BC3441006AC9B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3833C23BC3441006AC9B4 /* ViewController.swift */; };
 		22A3834023BC3441006AC9B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A3833E23BC3441006AC9B4 /* Main.storyboard */; };
 		22A3834223BC3442006AC9B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A3834123BC3442006AC9B4 /* Assets.xcassets */; };
 		22A3834523BC3442006AC9B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A3834323BC3442006AC9B4 /* LaunchScreen.storyboard */; };
+		22C2063623BD872400B4004D /* apiAccessModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2063523BD872400B4004D /* apiAccessModule.swift */; };
+		22C2063823BD8C7100B4004D /* Contents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C2063723BD8C7100B4004D /* Contents.plist */; };
+		22C2063A23BD8F5900B4004D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2063923BD8F5800B4004D /* SignupViewController.swift */; };
+		22C2063C23BD8F6B00B4004D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2063B23BD8F6B00B4004D /* LoginViewController.swift */; };
+		22C2063E23BD93CC00B4004D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C2063D23BD93CB00B4004D /* GoogleService-Info.plist */; };
 		6B6C59E4F657375B282B181A /* Pods_finance_app2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F81A675C86E60938D07BB4 /* Pods_finance_app2.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +24,15 @@
 		22A3833523BC3441006AC9B4 /* finance-app2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "finance-app2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A3833823BC3441006AC9B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A3833A23BC3441006AC9B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22A3833C23BC3441006AC9B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22A3833F23BC3441006AC9B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22A3834123BC3442006AC9B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A3834423BC3442006AC9B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A3834623BC3442006AC9B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22C2063523BD872400B4004D /* apiAccessModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiAccessModule.swift; sourceTree = "<group>"; };
+		22C2063723BD8C7100B4004D /* Contents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contents.plist; sourceTree = "<group>"; };
+		22C2063923BD8F5800B4004D /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		22C2063B23BD8F6B00B4004D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		22C2063D23BD93CB00B4004D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81FE007E7A9CA8F06D05290A /* Pods-finance-app2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finance-app2.debug.xcconfig"; path = "Target Support Files/Pods-finance-app2/Pods-finance-app2.debug.xcconfig"; sourceTree = "<group>"; };
 		9D07E3A0A8A94FFD284B14DB /* Pods-finance-app2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finance-app2.release.xcconfig"; path = "Target Support Files/Pods-finance-app2/Pods-finance-app2.release.xcconfig"; sourceTree = "<group>"; };
 		E2F81A675C86E60938D07BB4 /* Pods_finance_app2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_finance_app2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,10 +73,14 @@
 			children = (
 				22A3833823BC3441006AC9B4 /* AppDelegate.swift */,
 				22A3833A23BC3441006AC9B4 /* SceneDelegate.swift */,
-				22A3833C23BC3441006AC9B4 /* ViewController.swift */,
+				22C2063523BD872400B4004D /* apiAccessModule.swift */,
+				22C2063923BD8F5800B4004D /* SignupViewController.swift */,
+				22C2063B23BD8F6B00B4004D /* LoginViewController.swift */,
 				22A3833E23BC3441006AC9B4 /* Main.storyboard */,
 				22A3834123BC3442006AC9B4 /* Assets.xcassets */,
 				22A3834323BC3442006AC9B4 /* LaunchScreen.storyboard */,
+				22C2063723BD8C7100B4004D /* Contents.plist */,
+				22C2063D23BD93CB00B4004D /* GoogleService-Info.plist */,
 				22A3834623BC3442006AC9B4 /* Info.plist */,
 			);
 			path = "finance-app2";
@@ -88,7 +100,6 @@
 				81FE007E7A9CA8F06D05290A /* Pods-finance-app2.debug.xcconfig */,
 				9D07E3A0A8A94FFD284B14DB /* Pods-finance-app2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +165,8 @@
 			files = (
 				22A3834523BC3442006AC9B4 /* LaunchScreen.storyboard in Resources */,
 				22A3834223BC3442006AC9B4 /* Assets.xcassets in Resources */,
+				22C2063E23BD93CC00B4004D /* GoogleService-Info.plist in Resources */,
+				22C2063823BD8C7100B4004D /* Contents.plist in Resources */,
 				22A3834023BC3441006AC9B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,8 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A3833D23BC3441006AC9B4 /* ViewController.swift in Sources */,
 				22A3833923BC3441006AC9B4 /* AppDelegate.swift in Sources */,
+				22C2063623BD872400B4004D /* apiAccessModule.swift in Sources */,
+				22C2063A23BD8F5900B4004D /* SignupViewController.swift in Sources */,
+				22C2063C23BD8F6B00B4004D /* LoginViewController.swift in Sources */,
 				22A3833B23BC3441006AC9B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
