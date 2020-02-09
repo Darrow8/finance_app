@@ -21,11 +21,14 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func loginPressed(_ sender: Any) {
+//        apiAccessModule.cryptoSearcher()
         
     }
     
     
     @IBAction func SnapchatPressed(_ sender: Any) {
+//        print(apiAccessModule().cryptoSearcher(crypto: "BTC", type: 0))
+        print(apiAccessModule().stockSearcher(stock: "TSLA", type: "0.5"))
     }
     
     
@@ -34,5 +37,4 @@ class LoginViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
         self.present(vc, animated: true, completion: nil)
     }
-    
 }

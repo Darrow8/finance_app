@@ -38,8 +38,6 @@ class SignupViewController: UIViewController {
     
 
     @IBAction func SnapchatPressed(_ sender: Any) {
-        
-        
     }
     
     
@@ -48,6 +46,6 @@ class SignupViewController: UIViewController {
         
     }
     
-    
+
 
 }

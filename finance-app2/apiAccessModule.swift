@@ -39,8 +39,7 @@ class apiAccessModule{
      "10. change percent"
      ]
 
-
-    func cryptoSearcher(crypto: String, type: String) -> String{
+    func cryptoSearcher(crypto: String, type: Int) -> String{
         var cryptoFinder : String = ""
         let url = "https://alpha-vantage.p.rapidapi.com/query?from_currency=\(crypto)&function=CURRENCY_EXCHANGE_RATE&to_currency=USD"
         let request = NSMutableURLRequest(url: NSURL(string: url)! as URL,
@@ -57,7 +56,7 @@ class apiAccessModule{
                         _ = response as? HTTPURLResponse
 
                         let json = try? JSON(data: data!)
-                        cryptoFinder = json!["Realtime Currency Exchange Rate"][type].stringValue
+                        cryptoFinder = json!["Realtime Currency Exchange Rate"][self.cryptoTypes[type]].stringValue
                     print("Here is your data: " + cryptoFinder)
                     }
                 })
