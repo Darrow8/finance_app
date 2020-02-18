@@ -8,9 +8,9 @@
 
 import Foundation
 import SwiftyJSON
+import UIKit
 
-
-class apiAccessModule{
+class apiAccessManager{
     let headers = [
          "x-rapidapi-host": "alpha-vantage.p.rapidapi.com",
          "x-rapidapi-key": "22ea4d601bmsh400707d28d1dd3fp12a0fdjsnbe0adaf44778"
@@ -90,5 +90,9 @@ class apiAccessModule{
 
         dataTask.resume()
         return stockFinder
+    }
+    //TODO: Replace with real stock market price
+    func getPrice(tickr: String) -> Int{
+        return 50
     }
 }

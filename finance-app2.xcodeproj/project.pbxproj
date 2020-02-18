@@ -3,37 +3,44 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22774F9523ECA8AE0018E068 /* homepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22774F9423ECA8AE0018E068 /* homepageViewController.swift */; };
+		220D24FD23F9E0400037CF9A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 220D24FC23F9E0400037CF9A /* SwiftUICharts */; };
+		220D250223F9E6B80037CF9A /* homepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D250123F9E6B80037CF9A /* homepageView.swift */; };
+		2262C14A23F9E95C00F53E93 /* firestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14923F9E95C00F53E93 /* firestoreManager.swift */; };
+		2262C14C23F9E9B400F53E93 /* authView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14B23F9E9B400F53E93 /* authView.swift */; };
+		2262C14E23F9E9C300F53E93 /* searchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14D23F9E9C300F53E93 /* searchView.swift */; };
+		2262C15023F9E9CB00F53E93 /* newsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14F23F9E9CB00F53E93 /* newsView.swift */; };
+		2262C17223FB621E00F53E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2262C17123FB621E00F53E93 /* Main.storyboard */; };
+		2262C17523FB647800F53E93 /* userDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C17423FB647800F53E93 /* userDataManager.swift */; };
 		22A3833923BC3441006AC9B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3833823BC3441006AC9B4 /* AppDelegate.swift */; };
 		22A3833B23BC3441006AC9B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3833A23BC3441006AC9B4 /* SceneDelegate.swift */; };
-		22A3834023BC3441006AC9B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A3833E23BC3441006AC9B4 /* Main.storyboard */; };
 		22A3834223BC3442006AC9B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A3834123BC3442006AC9B4 /* Assets.xcassets */; };
 		22A3834523BC3442006AC9B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A3834323BC3442006AC9B4 /* LaunchScreen.storyboard */; };
-		22C2063623BD872400B4004D /* apiAccessModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2063523BD872400B4004D /* apiAccessModule.swift */; };
+		22C2063623BD872400B4004D /* apiAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2063523BD872400B4004D /* apiAccessManager.swift */; };
 		22C2063823BD8C7100B4004D /* Contents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C2063723BD8C7100B4004D /* Contents.plist */; };
-		22C2063A23BD8F5900B4004D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2063923BD8F5800B4004D /* SignupViewController.swift */; };
-		22C2063C23BD8F6B00B4004D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2063B23BD8F6B00B4004D /* LoginViewController.swift */; };
 		22C2063E23BD93CC00B4004D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C2063D23BD93CB00B4004D /* GoogleService-Info.plist */; };
 		6B6C59E4F657375B282B181A /* Pods_finance_app2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F81A675C86E60938D07BB4 /* Pods_finance_app2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22774F9423ECA8AE0018E068 /* homepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepageViewController.swift; sourceTree = "<group>"; };
+		220D250123F9E6B80037CF9A /* homepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepageView.swift; sourceTree = "<group>"; };
+		2262C14923F9E95C00F53E93 /* firestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firestoreManager.swift; sourceTree = "<group>"; };
+		2262C14B23F9E9B400F53E93 /* authView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authView.swift; sourceTree = "<group>"; };
+		2262C14D23F9E9C300F53E93 /* searchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchView.swift; sourceTree = "<group>"; };
+		2262C14F23F9E9CB00F53E93 /* newsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsView.swift; sourceTree = "<group>"; };
+		2262C17123FB621E00F53E93 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2262C17423FB647800F53E93 /* userDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userDataManager.swift; sourceTree = "<group>"; };
 		22A3833523BC3441006AC9B4 /* finance-app2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "finance-app2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A3833823BC3441006AC9B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A3833A23BC3441006AC9B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22A3833F23BC3441006AC9B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22A3834123BC3442006AC9B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A3834423BC3442006AC9B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A3834623BC3442006AC9B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22C2063523BD872400B4004D /* apiAccessModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiAccessModule.swift; sourceTree = "<group>"; };
+		22C2063523BD872400B4004D /* apiAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiAccessManager.swift; sourceTree = "<group>"; };
 		22C2063723BD8C7100B4004D /* Contents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contents.plist; sourceTree = "<group>"; };
-		22C2063923BD8F5800B4004D /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		22C2063B23BD8F6B00B4004D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		22C2063D23BD93CB00B4004D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81FE007E7A9CA8F06D05290A /* Pods-finance-app2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finance-app2.debug.xcconfig"; path = "Target Support Files/Pods-finance-app2/Pods-finance-app2.debug.xcconfig"; sourceTree = "<group>"; };
 		9D07E3A0A8A94FFD284B14DB /* Pods-finance-app2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finance-app2.release.xcconfig"; path = "Target Support Files/Pods-finance-app2/Pods-finance-app2.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,20 +53,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B6C59E4F657375B282B181A /* Pods_finance_app2.framework in Frameworks */,
+				220D24FD23F9E0400037CF9A /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22774F9623ECA8E70018E068 /* ViewControllers */ = {
+		220D250323F9E6C00037CF9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				22C2063923BD8F5800B4004D /* SignupViewController.swift */,
-				22C2063B23BD8F6B00B4004D /* LoginViewController.swift */,
-				22774F9423ECA8AE0018E068 /* homepageViewController.swift */,
+				220D250123F9E6B80037CF9A /* homepageView.swift */,
+				2262C14B23F9E9B400F53E93 /* authView.swift */,
+				2262C14D23F9E9C300F53E93 /* searchView.swift */,
+				2262C14F23F9E9CB00F53E93 /* newsView.swift */,
 			);
-			path = ViewControllers;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2262C14623F9E8E700F53E93 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				22C2063523BD872400B4004D /* apiAccessManager.swift */,
+				2262C14923F9E95C00F53E93 /* firestoreManager.swift */,
+				2262C17423FB647800F53E93 /* userDataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		2262C17323FB622900F53E93 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				22A3834323BC3442006AC9B4 /* LaunchScreen.storyboard */,
+				2262C17123FB621E00F53E93 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		22A3832C23BC3441006AC9B4 = {
@@ -85,11 +113,10 @@
 			children = (
 				22A3833823BC3441006AC9B4 /* AppDelegate.swift */,
 				22A3833A23BC3441006AC9B4 /* SceneDelegate.swift */,
-				22C2063523BD872400B4004D /* apiAccessModule.swift */,
-				22774F9623ECA8E70018E068 /* ViewControllers */,
-				22A3833E23BC3441006AC9B4 /* Main.storyboard */,
+				2262C14623F9E8E700F53E93 /* DataManagers */,
+				220D250323F9E6C00037CF9A /* Views */,
 				22A3834123BC3442006AC9B4 /* Assets.xcassets */,
-				22A3834323BC3442006AC9B4 /* LaunchScreen.storyboard */,
+				2262C17323FB622900F53E93 /* Storyboards */,
 				22C2063723BD8C7100B4004D /* Contents.plist */,
 				22C2063D23BD93CB00B4004D /* GoogleService-Info.plist */,
 				22A3834623BC3442006AC9B4 /* Info.plist */,
@@ -132,6 +159,9 @@
 			dependencies = (
 			);
 			name = "finance-app2";
+			packageProductDependencies = (
+				220D24FC23F9E0400037CF9A /* SwiftUICharts */,
+			);
 			productName = "finance-app2";
 			productReference = 22A3833523BC3441006AC9B4 /* finance-app2.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +190,9 @@
 				Base,
 			);
 			mainGroup = 22A3832C23BC3441006AC9B4;
+			packageReferences = (
+				220D24FB23F9E0400037CF9A /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 22A3833623BC3441006AC9B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -175,10 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A3834523BC3442006AC9B4 /* LaunchScreen.storyboard in Resources */,
+				2262C17223FB621E00F53E93 /* Main.storyboard in Resources */,
 				22A3834223BC3442006AC9B4 /* Assets.xcassets in Resources */,
 				22C2063E23BD93CC00B4004D /* GoogleService-Info.plist in Resources */,
 				22C2063823BD8C7100B4004D /* Contents.plist in Resources */,
-				22A3834023BC3441006AC9B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,11 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22774F9523ECA8AE0018E068 /* homepageViewController.swift in Sources */,
+				2262C14A23F9E95C00F53E93 /* firestoreManager.swift in Sources */,
 				22A3833923BC3441006AC9B4 /* AppDelegate.swift in Sources */,
-				22C2063623BD872400B4004D /* apiAccessModule.swift in Sources */,
-				22C2063A23BD8F5900B4004D /* SignupViewController.swift in Sources */,
-				22C2063C23BD8F6B00B4004D /* LoginViewController.swift in Sources */,
+				2262C14E23F9E9C300F53E93 /* searchView.swift in Sources */,
+				2262C17523FB647800F53E93 /* userDataManager.swift in Sources */,
+				2262C15023F9E9CB00F53E93 /* newsView.swift in Sources */,
+				220D250223F9E6B80037CF9A /* homepageView.swift in Sources */,
+				22C2063623BD872400B4004D /* apiAccessManager.swift in Sources */,
+				2262C14C23F9E9B400F53E93 /* authView.swift in Sources */,
 				22A3833B23BC3441006AC9B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,14 +279,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		22A3833E23BC3441006AC9B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22A3833F23BC3441006AC9B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		22A3834323BC3442006AC9B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		220D24FB23F9E0400037CF9A /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		220D24FC23F9E0400037CF9A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 220D24FB23F9E0400037CF9A /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22A3832D23BC3441006AC9B4 /* Project object */;
 }
