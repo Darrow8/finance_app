@@ -8,17 +8,43 @@
 
 import SwiftUI
 import Foundation
-import SwiftUICharts
-import UIKit
+//import SwiftUICharts
 
 
 struct homepageView: View {
-    let portfolioData = firebaseOutputManager().portfolioData()
-    print(portfolioData)
-    var body: some View {
-        LineView(data: [8,23,54,32,12,37,7,23,43], title: "$XYZ", legend: "Full screen") // legend is optional, use optional .padding()
-    }
     
+    @State private var selectorIndex = 0
+    @State private var numbers = ["One","Two","Three"]
+    var theUser: User = loginManager().login(username: "Darrow H")
+    private var porty: Portfolio = Portfolio(stockList: [], viewingStockList: [], currentBalance: 500)
+    private var data: Array<Double> = [0,1,2]
+    private var graphTimeline: Int = 0
+//    var userInfo = User.setupUser(User)
+    var body: some View {
+        return VStack {
+//            for reference, there should be 288 totalPoints
+//            self.theUser = loginManager().login(username: "darrow_h19")
+//            if(graphTimeline == 0){
+//                theUser.portfolioID
+                
+            LineView(data: self.data, title: "$XYZ", legend: "Hello World",totalPoints: 18,yPosChange: 300)
+//            }
+            Text(theUser.name)
+
+//            Picker("Numbers", selection: $selectorIndex) {
+//                ForEach(0 ..< numbers.count) { index in
+//                    Text(self.numbers[index]).tag(index)
+//                }
+//                }.pickerStyle(SegmentedPickerStyle()).position(x: 0, y: 500)
+//
+        }
+
+    }
+//    mutating func prepareGraph(){
+//        theUser = loginManager().login(username: "darrow_h19")
+//        thePortfolio = firestoreManager().getData(collection: "Portfolios", documentVar: self.theUser.portfolioID, documentField: "PortfolioID") as! Portfolio
+//
+//    }
 }
 
 struct homepageView_Previews: PreviewProvider {

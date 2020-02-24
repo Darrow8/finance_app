@@ -280,6 +280,9 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - PromisesObjC (1.2.8)
+  - PromisesSwift (1.2.8):
+    - PromisesObjC (= 1.2.8)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
@@ -287,6 +290,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
+  - PromisesSwift
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -312,6 +316,8 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - PromisesObjC
+    - PromisesSwift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -336,8 +342,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  PromisesSwift: 37bad6f4daddb02f7c9c531efe91e8b21c13ee2f
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 65a6fc5dcf2d0084e55ed3a82b6638c30732d4d2
+PODFILE CHECKSUM: 7f23a1f51a53a806b226b90ba8beb63387c9d6eb
 
 COCOAPODS: 1.8.4
