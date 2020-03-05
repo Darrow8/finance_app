@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2207307B240C3644000A8F73 /* videoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207307A240C3644000A8F73 /* videoManager.swift */; };
 		220D250223F9E6B80037CF9A /* homepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D250123F9E6B80037CF9A /* homepageView.swift */; };
 		2262C14A23F9E95C00F53E93 /* firestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14923F9E95C00F53E93 /* firestoreManager.swift */; };
 		2262C14C23F9E9B400F53E93 /* authView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14B23F9E9B400F53E93 /* authView.swift */; };
@@ -14,13 +15,14 @@
 		2262C15023F9E9CB00F53E93 /* newsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14F23F9E9CB00F53E93 /* newsView.swift */; };
 		2262C17223FB621E00F53E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2262C17123FB621E00F53E93 /* Main.storyboard */; };
 		2262C17523FB647800F53E93 /* userDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C17423FB647800F53E93 /* userDataManager.swift */; };
-		22808B3123FDEF880046A8C4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22808B2123FDEF880046A8C4 /* Helpers.swift */; };
-		22808B3523FDEF890046A8C4 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22808B2723FDEF880046A8C4 /* IndicatorPoint.swift */; };
-		22808B3623FDEF890046A8C4 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22808B2823FDEF880046A8C4 /* LineView.swift */; };
-		22808B3723FDEF890046A8C4 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22808B2923FDEF880046A8C4 /* Legend.swift */; };
-		22808B3823FDEF890046A8C4 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22808B2A23FDEF880046A8C4 /* LineChartView.swift */; };
-		22808B3923FDEF890046A8C4 /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22808B2B23FDEF880046A8C4 /* Path+QuadCurve.swift */; };
-		22808B3A23FDEF890046A8C4 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22808B2C23FDEF880046A8C4 /* Line.swift */; };
+		227F2911240B649E0095557A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F2909240B649E0095557A /* Helpers.swift */; };
+		227F2912240B649E0095557A /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F290B240B649E0095557A /* IndicatorPoint.swift */; };
+		227F2913240B649E0095557A /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F290C240B649E0095557A /* LineView.swift */; };
+		227F2914240B649E0095557A /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F290D240B649E0095557A /* Legend.swift */; };
+		227F2915240B649E0095557A /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F290E240B649E0095557A /* LineChartView.swift */; };
+		227F2916240B649E0095557A /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F290F240B649E0095557A /* Path+QuadCurve.swift */; };
+		227F2917240B649E0095557A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F2910240B649E0095557A /* Line.swift */; };
+		227F2919240B655C0095557A /* YoutubeEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F2918240B655C0095557A /* YoutubeEmbed.swift */; };
 		22808B3C23FEB6230046A8C4 /* loginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22808B3B23FEB6230046A8C4 /* loginManager.swift */; };
 		22A3833923BC3441006AC9B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3833823BC3441006AC9B4 /* AppDelegate.swift */; };
 		22A3833B23BC3441006AC9B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3833A23BC3441006AC9B4 /* SceneDelegate.swift */; };
@@ -33,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2207307A240C3644000A8F73 /* videoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoManager.swift; sourceTree = "<group>"; };
 		220D250123F9E6B80037CF9A /* homepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepageView.swift; sourceTree = "<group>"; };
 		2262C14923F9E95C00F53E93 /* firestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firestoreManager.swift; sourceTree = "<group>"; };
 		2262C14B23F9E9B400F53E93 /* authView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authView.swift; sourceTree = "<group>"; };
@@ -40,13 +43,14 @@
 		2262C14F23F9E9CB00F53E93 /* newsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsView.swift; sourceTree = "<group>"; };
 		2262C17123FB621E00F53E93 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2262C17423FB647800F53E93 /* userDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userDataManager.swift; sourceTree = "<group>"; };
-		22808B2123FDEF880046A8C4 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		22808B2723FDEF880046A8C4 /* IndicatorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
-		22808B2823FDEF880046A8C4 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
-		22808B2923FDEF880046A8C4 /* Legend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
-		22808B2A23FDEF880046A8C4 /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
-		22808B2B23FDEF880046A8C4 /* Path+QuadCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
-		22808B2C23FDEF880046A8C4 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		227F2909240B649E0095557A /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		227F290B240B649E0095557A /* IndicatorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		227F290C240B649E0095557A /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		227F290D240B649E0095557A /* Legend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
+		227F290E240B649E0095557A /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		227F290F240B649E0095557A /* Path+QuadCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
+		227F2910240B649E0095557A /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		227F2918240B655C0095557A /* YoutubeEmbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeEmbed.swift; sourceTree = "<group>"; };
 		22808B3B23FEB6230046A8C4 /* loginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginManager.swift; sourceTree = "<group>"; };
 		22A3833523BC3441006AC9B4 /* finance-app2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "finance-app2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A3833823BC3441006AC9B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				2262C14923F9E95C00F53E93 /* firestoreManager.swift */,
 				2262C17423FB647800F53E93 /* userDataManager.swift */,
 				22808B3B23FEB6230046A8C4 /* loginManager.swift */,
+				2207307A240C3644000A8F73 /* videoManager.swift */,
 			);
 			path = DataManagers;
 			sourceTree = "<group>";
@@ -105,24 +110,33 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		22808B1B23FDEF880046A8C4 /* SwiftUICharts */ = {
+		227F2907240B649E0095557A /* ViewElements */ = {
 			isa = PBXGroup;
 			children = (
-				22808B2123FDEF880046A8C4 /* Helpers.swift */,
-				22808B2623FDEF880046A8C4 /* LineChart */,
+				227F2908240B649E0095557A /* SwiftUICharts */,
+				227F2918240B655C0095557A /* YoutubeEmbed.swift */,
+			);
+			path = ViewElements;
+			sourceTree = "<group>";
+		};
+		227F2908240B649E0095557A /* SwiftUICharts */ = {
+			isa = PBXGroup;
+			children = (
+				227F2909240B649E0095557A /* Helpers.swift */,
+				227F290A240B649E0095557A /* LineChart */,
 			);
 			path = SwiftUICharts;
 			sourceTree = "<group>";
 		};
-		22808B2623FDEF880046A8C4 /* LineChart */ = {
+		227F290A240B649E0095557A /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
-				22808B2723FDEF880046A8C4 /* IndicatorPoint.swift */,
-				22808B2823FDEF880046A8C4 /* LineView.swift */,
-				22808B2923FDEF880046A8C4 /* Legend.swift */,
-				22808B2A23FDEF880046A8C4 /* LineChartView.swift */,
-				22808B2B23FDEF880046A8C4 /* Path+QuadCurve.swift */,
-				22808B2C23FDEF880046A8C4 /* Line.swift */,
+				227F290B240B649E0095557A /* IndicatorPoint.swift */,
+				227F290C240B649E0095557A /* LineView.swift */,
+				227F290D240B649E0095557A /* Legend.swift */,
+				227F290E240B649E0095557A /* LineChartView.swift */,
+				227F290F240B649E0095557A /* Path+QuadCurve.swift */,
+				227F2910240B649E0095557A /* Line.swift */,
 			);
 			path = LineChart;
 			sourceTree = "<group>";
@@ -150,7 +164,7 @@
 			children = (
 				22A3833823BC3441006AC9B4 /* AppDelegate.swift */,
 				22A3833A23BC3441006AC9B4 /* SceneDelegate.swift */,
-				22808B1B23FDEF880046A8C4 /* SwiftUICharts */,
+				227F2907240B649E0095557A /* ViewElements */,
 				2262C14623F9E8E700F53E93 /* DataManagers */,
 				220D250323F9E6C00037CF9A /* Views */,
 				22A3834123BC3442006AC9B4 /* Assets.xcassets */,
@@ -301,21 +315,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2262C14A23F9E95C00F53E93 /* firestoreManager.swift in Sources */,
-				22808B3123FDEF880046A8C4 /* Helpers.swift in Sources */,
-				22808B3523FDEF890046A8C4 /* IndicatorPoint.swift in Sources */,
 				22A3833923BC3441006AC9B4 /* AppDelegate.swift in Sources */,
+				227F2917240B649E0095557A /* Line.swift in Sources */,
+				227F2912240B649E0095557A /* IndicatorPoint.swift in Sources */,
 				2262C14E23F9E9C300F53E93 /* searchView.swift in Sources */,
-				22808B3723FDEF890046A8C4 /* Legend.swift in Sources */,
+				227F2913240B649E0095557A /* LineView.swift in Sources */,
 				2262C17523FB647800F53E93 /* userDataManager.swift in Sources */,
+				227F2911240B649E0095557A /* Helpers.swift in Sources */,
+				227F2916240B649E0095557A /* Path+QuadCurve.swift in Sources */,
 				2262C15023F9E9CB00F53E93 /* newsView.swift in Sources */,
 				220D250223F9E6B80037CF9A /* homepageView.swift in Sources */,
-				22808B3923FDEF890046A8C4 /* Path+QuadCurve.swift in Sources */,
 				22C2063623BD872400B4004D /* apiAccessManager.swift in Sources */,
-				22808B3823FDEF890046A8C4 /* LineChartView.swift in Sources */,
+				227F2914240B649E0095557A /* Legend.swift in Sources */,
+				227F2915240B649E0095557A /* LineChartView.swift in Sources */,
+				2207307B240C3644000A8F73 /* videoManager.swift in Sources */,
 				22808B3C23FEB6230046A8C4 /* loginManager.swift in Sources */,
+				227F2919240B655C0095557A /* YoutubeEmbed.swift in Sources */,
 				2262C14C23F9E9B400F53E93 /* authView.swift in Sources */,
-				22808B3A23FDEF890046A8C4 /* Line.swift in Sources */,
-				22808B3623FDEF890046A8C4 /* LineView.swift in Sources */,
 				22A3833B23BC3441006AC9B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

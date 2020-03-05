@@ -15,6 +15,7 @@ pod 'Firebase/Storage'
 pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
 pod 'PromisesSwift'
+pod "YoutubePlayer-in-WKWebView", "~> 0.2.0" 
 
 # add pods for any other desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods

@@ -32,41 +32,49 @@ class firestoreManager {
         case invalidInput(Character)
     }
     
-    func fakeGetData(collection: String, documentVar: String, documentField: String) -> Promise<NSDictionary>{
-            return Promise<NSDictionary>{ fulfill, reject in
-                let userData:NSDictionary = [
-                    "username": "darrow_h19",
-                    "Name": "Darrow H",
-                    "portfolioID":"123456",
-                    "friendList": {}
-                ]
-                if(true){
-                    fulfill(userData)
-                }else{
-                    let randomError: Error = Errors.overflow
-                    reject(randomError)
-                }
+    func getUserData(collection: String, documentVar: String, documentField: String) -> Promise<User>{
+        
+        
+        let promise = Promise<User>(on: .main) { fulfill, reject in
+          // Called asynchronously on the dispatch queue specified.
+            
+            self.db.collection(collection).whereField(documentField, isEqualTo: documentVar)
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        for document in querySnapshot!.documents {
+                            let data = document.data() as Dictionary
+                            let user = User(username: data["Username"] as! String, name: data["Name"] as! String, portfolioID: data["PortfolioID"] as! String, friendList: [])
+                            fulfill(user)
+                        }
+                    }
             }
         }
-    
-    func getData(collection: String, documentVar: String, documentField: String) -> Promise<NSDictionary>{
-        return Promise<NSDictionary>{ fulfill, reject in
-//        var info: NSDictionary = [0:0]
-            self.db.collection(collection).whereField(documentVar, isEqualTo: documentField)
-            .getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                   reject(err)
-                } else {
-                    for document in querySnapshot!.documents {
-                        let user = document.data() as NSDictionary
-                        fulfill(user)
-                    }
-                }
-        }
-//            return info
-        }
+        return promise
     }
+    func getPortfolioData(collection: String, documentVar: String, documentField: String) -> Promise<Portfolio>{
+        
+        
+        let promise = Promise<Portfolio>(on: .main) { fulfill, reject in
+          // Called asynchronously on the dispatch queue specified.
+            
+            self.db.collection(collection).whereField(documentField, isEqualTo: documentVar)
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        for document in querySnapshot!.documents {
+                            let data = document.data() as Dictionary
+                            let user = Portfolio(stockList: data["stocks"] as! [String], viewingStockList: [], currentBalance: data["currentBalance"] as! Int, DayLong: data["DayLong"] as! [Int : Int])
+                            fulfill(user)
+                        }
+                    }
+            }
+        }
+        return promise
+    }
+            
     /**
         Uses collection, documentVar, and documentField from params and sets firebase documents
         WARNING!  -- DO NOT USE UNLESS CERTAIN
