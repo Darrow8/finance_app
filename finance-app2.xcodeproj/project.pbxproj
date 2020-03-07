@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2207307B240C3644000A8F73 /* videoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207307A240C3644000A8F73 /* videoManager.swift */; };
 		220D250223F9E6B80037CF9A /* homepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D250123F9E6B80037CF9A /* homepageView.swift */; };
+		221866782412077A00EBECEB /* featuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221866772412077A00EBECEB /* featuresView.swift */; };
 		2262C14A23F9E95C00F53E93 /* firestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14923F9E95C00F53E93 /* firestoreManager.swift */; };
 		2262C14C23F9E9B400F53E93 /* authView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14B23F9E9B400F53E93 /* authView.swift */; };
 		2262C14E23F9E9C300F53E93 /* searchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14D23F9E9C300F53E93 /* searchView.swift */; };
@@ -22,7 +23,7 @@
 		227F2915240B649E0095557A /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F290E240B649E0095557A /* LineChartView.swift */; };
 		227F2916240B649E0095557A /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F290F240B649E0095557A /* Path+QuadCurve.swift */; };
 		227F2917240B649E0095557A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F2910240B649E0095557A /* Line.swift */; };
-		227F2919240B655C0095557A /* YoutubeEmbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F2918240B655C0095557A /* YoutubeEmbed.swift */; };
+		227F2919240B655C0095557A /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F2918240B655C0095557A /* YoutubeView.swift */; };
 		22808B3C23FEB6230046A8C4 /* loginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22808B3B23FEB6230046A8C4 /* loginManager.swift */; };
 		22A3833923BC3441006AC9B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3833823BC3441006AC9B4 /* AppDelegate.swift */; };
 		22A3833B23BC3441006AC9B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3833A23BC3441006AC9B4 /* SceneDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		2207307A240C3644000A8F73 /* videoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoManager.swift; sourceTree = "<group>"; };
 		220D250123F9E6B80037CF9A /* homepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepageView.swift; sourceTree = "<group>"; };
+		221866772412077A00EBECEB /* featuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = featuresView.swift; sourceTree = "<group>"; };
 		2262C14923F9E95C00F53E93 /* firestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firestoreManager.swift; sourceTree = "<group>"; };
 		2262C14B23F9E9B400F53E93 /* authView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authView.swift; sourceTree = "<group>"; };
 		2262C14D23F9E9C300F53E93 /* searchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchView.swift; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		227F290E240B649E0095557A /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		227F290F240B649E0095557A /* Path+QuadCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
 		227F2910240B649E0095557A /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		227F2918240B655C0095557A /* YoutubeEmbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeEmbed.swift; sourceTree = "<group>"; };
+		227F2918240B655C0095557A /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		22808B3B23FEB6230046A8C4 /* loginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginManager.swift; sourceTree = "<group>"; };
 		22A3833523BC3441006AC9B4 /* finance-app2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "finance-app2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A3833823BC3441006AC9B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				227F2908240B649E0095557A /* SwiftUICharts */,
-				227F2918240B655C0095557A /* YoutubeEmbed.swift */,
+				227F2918240B655C0095557A /* YoutubeView.swift */,
+				221866772412077A00EBECEB /* featuresView.swift */,
 			);
 			path = ViewElements;
 			sourceTree = "<group>";
@@ -330,9 +333,10 @@
 				227F2915240B649E0095557A /* LineChartView.swift in Sources */,
 				2207307B240C3644000A8F73 /* videoManager.swift in Sources */,
 				22808B3C23FEB6230046A8C4 /* loginManager.swift in Sources */,
-				227F2919240B655C0095557A /* YoutubeEmbed.swift in Sources */,
+				227F2919240B655C0095557A /* YoutubeView.swift in Sources */,
 				2262C14C23F9E9B400F53E93 /* authView.swift in Sources */,
 				22A3833B23BC3441006AC9B4 /* SceneDelegate.swift in Sources */,
+				221866782412077A00EBECEB /* featuresView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,12 +27,12 @@ public struct LineChartView: View {
             if (oldValue != self.currentValue && showIndicatorDot) {
                 HapticFeedback.playSelection()
             }
-            
+
         }
     }
     let frame = CGSize(width: 180, height: 120)
     private var rateValue: Int
-    
+
     public init(data: [Double],
                 title: String,
                 legend: String? = nil,
@@ -41,7 +41,7 @@ public struct LineChartView: View {
                 rateValue: Int? = 14,
                 dropShadow: Bool? = true,
                 valueSpecifier: String? = "%.1f") {
-        
+
         self.data = ChartData(points: data)
         self.title = title
         self.legend = legend
@@ -52,7 +52,7 @@ public struct LineChartView: View {
         self.dropShadow = dropShadow!
         self.valueSpecifier = valueSpecifier!
     }
-    
+
     public var body: some View {
         ZStack(alignment: .center){
             RoundedRectangle(cornerRadius: 20)
@@ -115,12 +115,12 @@ public struct LineChartView: View {
             })
         )
     }
-    
+
     @discardableResult func getClosestDataPoint(toPoint: CGPoint, width:CGFloat, height: CGFloat) -> CGPoint {
         let points = self.data.onlyPoints()
         let stepWidth: CGFloat = width / CGFloat(points.count-1)
         let stepHeight: CGFloat = height / CGFloat(points.max()! + points.min()!)
-        
+
         let index:Int = Int(round((toPoint.x)/stepWidth))
         if (index >= 0 && index < points.count){
             self.currentValue = points[index]

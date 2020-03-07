@@ -8,6 +8,8 @@
 
 import Foundation
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 
 struct User {
@@ -15,10 +17,6 @@ struct User {
     var name: String
     var portfolioID: String
     var friendList: [String]
-    //sets up user account after being logged in
-//    func setupUser() -> User{
-//
-//    }
     //prints all user data
     func printUser(){
         print("username: \(username)")
@@ -28,14 +26,13 @@ struct User {
         print("username: \(username)")
 
     }
-    
-//    static func userData(userN: String) -> User{
-//        firestoreManager().getUserData(collection: "Users", documentVar: userN, documentField: "Username").then { user in
-//            values = user
+//        func currentUserData(_ completion: @escaping CompletionObject<User?>) {
+//          guard let id = Auth.auth().currentUser?.uid else { completion(nil); return }
+//          let query = FirestoreService.DataQuery(key: "id", value: id, mode: .equal)
+//          service.objectWithListener(ObjectUser.self, parameter: query, reference: .init(location: .users), completion: { users in
+//            completion(users.first)
+//          })
 //        }
-//        return values
-//        
-//    }
     func updateStockChart(portfolioID: String) -> [Double]{
 //        firestoreManager().getPortfolioData(collection: "Portfolios", documentVar: portfolioID, documentField: "PortfolioID").then{ port in
 //            let dayData =  port.DayLong

@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct searchView: View {
+    @State var name: String = ""
     var body: some View {
-        Text("Hello, World!")
+        return Text("hello world")
     }
 }
 

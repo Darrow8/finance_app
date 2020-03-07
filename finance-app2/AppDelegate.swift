@@ -11,7 +11,7 @@ import SwiftUI
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     
 
@@ -21,23 +21,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     didFinishLaunchingWithOptions launchOptions:
     [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     FirebaseApp.configure()
-    let center = UNUserNotificationCenter.current()
-    center.requestAuthorization(options: [.alert,.badge,.sound]) { (granted, err) in
-        print("granted \(granted)")
-        print("err \(err)")
-    }
-    center.getNotificationSettings { settings in
-        guard settings.authorizationStatus == .authorized else { return }
-
-        if settings.alertSetting == .enabled {
-            // Schedule an alert-only notification.
-        } else {
-            // Schedule a notification with a badge and sound.
-        }
-    }
+//    let center = UNUserNotificationCenter.current()
+//    
+//    center.delegate = self
+//    center.requestAuthorization(options: [.alert,.badge,.sound]) { (granted, err) in
+//        print("granted \(granted)")
+//        print("err \(err)")
+//    }
+    
+//    center.getNotificationSettings { settings in
+//        guard settings.authorizationStatus == .authorized else { return }
+//
+//        if settings.alertSetting == .enabled {
+//            // Schedule an alert-only notification.
+//            print("Here") 
+//        } else {
+//            // Schedule a notification with a badge and sound.
+//        }
+//    }
     
     return true
   }
+
+    
 // MARK: UISceneSession Lifecycle
 
 func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
