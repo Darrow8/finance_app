@@ -45,7 +45,7 @@ class firestoreManager {
                     } else {
                         for document in querySnapshot!.documents {
                             let data = document.data() as Dictionary
-                            let user = User(username: data["Username"] as! String, name: data["Name"] as! String, portfolioID: data["PortfolioID"] as! String, friendList: [])
+                            let user = User(username: data["Username"] as! String, name: data["Name"] as! String, portfolioID: data["PortfolioID"] as! String)
                             fulfill(user)
                         }
                     }

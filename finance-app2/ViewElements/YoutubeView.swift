@@ -26,7 +26,7 @@ struct YoutubeView: UIViewRepresentable {
 //    func youtubeData(){
 //
 //                let session = URLSession.shared
-//                let apiKey = "AIzaSyBeZbTWsZ2TKcZ2GlHa7U8UdJtai33L0Kk"
+//                let apiKey = "AIzaSyCKF0Ii5lBu2JID3lQTRtsGUb3JV6gACqc"
 //                let query = "rappers"
 //                let url = URL(string: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=\(query)&key=\(apiKey)")!
 //                let task = session.dataTask(with: url, completionHandler: { (data, response, error) in

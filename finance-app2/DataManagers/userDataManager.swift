@@ -13,16 +13,24 @@ import FirebaseAuth
 
 
 struct User {
-    var username: String
-    var name: String
-    var portfolioID: String
-    var friendList: [String]
+    var username: String?
+    var name: String?
+    var number: String?
+    var password: String?
+    var portfolioID: String?
+//    var friendList: [String]?
+    
+    
+    
+//    init(<#parameters#>) {
+//        <#statements#>
+//    }
     //prints all user data
     func printUser(){
         print("username: \(username)")
         print("name: \(name)")
         print("portfolio: \(portfolioID)")
-        print("friendList: \(friendList)")
+//        print("friendList: \(friendList)")
         print("username: \(username)")
 
     }

@@ -9,9 +9,15 @@
 import SwiftUI
 
 struct searchView: View {
-    @State var name: String = ""
     var body: some View {
-        return Text("hello world")
+        NavigationView {
+            VStack{
+                Text("Hello World")
+                NavigationLink(destination: homepageView().navigationBarBackButtonHidden(true)) {
+                    Text("Do Something")
+                }
+            }
+        }
     }
 }
 

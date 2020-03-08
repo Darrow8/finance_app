@@ -22,7 +22,7 @@ struct homepageView: View {
 //   @State var userInfo: User
 //    var userInfo = User.setupUser(User)
     var body: some View {
-        var userInfo: User = User(username: "", name: "", portfolioID: "", friendList: [])
+        var userInfo: User = User(username: "", name: "", portfolioID: "" )
         var theData: [Double] = self.data
         firestoreManager().getUserData(collection: "Users", documentVar: "darrow_h19", documentField: "Username").then{ user in
 //            print(user)
@@ -64,6 +64,7 @@ struct homepageView: View {
 //        thePortfolio = firestoreManager().getData(collection: "Portfolios", documentVar: self.theUser.portfolioID, documentField: "PortfolioID") as! Portfolio
 //
 //    }
+    
 }
 
 struct homepageView_Previews: PreviewProvider {
