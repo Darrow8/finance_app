@@ -7,23 +7,25 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 
 struct loginView: View {
-            @State private var username = ""
-            @State private var password = ""
-            @State private var showLinkTarget = false
-
-            
-            // MARK: - View
-        var body: some View {
+    @State private var username = ""
+    @State private var password = ""
+    @State private var showLinkTarget = false
+    @State private var isActive = false
+    @State private var isNotActive = false
+    // MARK: - View
+    var body: some View {
+        NavigationStackView{
             NavigationView{
                 VStack {
                     Text("Finance App Login")
                         .font(.largeTitle).foregroundColor(Color.white)
                         .padding([.top, .bottom], 40)
                         .shadow(radius: 10.0, x: 20, y: 10)
-
+                    
                     Spacer()
                     VStack(alignment: .leading, spacing: 15) {
                         TextField("Username", text: self.$username)
@@ -31,8 +33,6 @@ struct loginView: View {
                             .background(Color.white)
                             .cornerRadius(20.0)
                             .shadow(radius: 10.0, x: 20, y: 10)
-//                            .textContentType(.oneTimeCode)
-//                            .keyboardType(.numberPad)
                         
                         SecureField("Password", text: self.$password)
                             .padding()
@@ -40,35 +40,45 @@ struct loginView: View {
                             .cornerRadius(20.0)
                             .shadow(radius: 10.0, x: 20, y: 10)
                     }.padding([.leading, .trailing], 27.5)
-                     
+                    
                     Button(action: {loginManager().login(user: User(username: self.username, password: self.password)) { (FirestoreResponse) in
-                            print(FirestoreResponse)
-                            print("FINISHED")
-                            self.showLinkTarget = true
+                        print(FirestoreResponse)
+                        print("FINISHED")
+                        self.showLinkTarget = true
                         }}) {
-                        Text("Sign In")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(width: 300, height: 50)
-                            .background(Color.green)
-                            .cornerRadius(15.0)
-                            .shadow(radius: 10.0, x: 20, y: 10)
+                            Text("Sign In")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.green)
+                                .cornerRadius(15.0)
+                                .shadow(radius: 10.0, x: 20, y: 10)
                             NavigationLink(destination: homepageView().navigationBarBackButtonHidden(true), isActive: self.$showLinkTarget ) {
-                               Spacer().fixedSize()
+                                Spacer().fixedSize()
                             }
                     }.padding(.top, 50)
                     Spacer()
                     HStack{
                         Text("Don't have an account? ")
-                        Button(action: {}) {
-                            
-                            NavigationLink(destination: registerView()){
-
-                                Text("Sign Up")
-                                    .foregroundColor(.black)
-                            }
+                        PushView(destination: registerView(), isActive: $isNotActive) {
+                            Text("")
                         }
+                        PopView(isActive: $isActive){
+                            Text("")
+                        }
+                        Button(action: {
+                            if(loginManager().isInNav){
+                                self.isActive.toggle()
+                                loginManager().isInNav = false
+                            }else{
+                                self.isNotActive.toggle()
+                                loginManager().isInNav = true
+                            }
+                        }, label: {
+                            Text("Signup")
+                                .foregroundColor(.black)
+                        })
                     }
                 }
                 .background(
@@ -76,6 +86,7 @@ struct loginView: View {
                         .edgesIgnoringSafeArea(.all))
                 
             }
+        }
     }
 }
 

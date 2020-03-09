@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		2262C15023F9E9CB00F53E93 /* newsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C14F23F9E9CB00F53E93 /* newsView.swift */; };
 		2262C17223FB621E00F53E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2262C17123FB621E00F53E93 /* Main.storyboard */; };
 		2262C17523FB647800F53E93 /* userDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2262C17423FB647800F53E93 /* userDataManager.swift */; };
+		2271D3612415C2C100D9E0B4 /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = 2271D3602415C2C100D9E0B4 /* NavigationStack */; };
 		227F2911240B649E0095557A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F2909240B649E0095557A /* Helpers.swift */; };
 		227F2912240B649E0095557A /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F290B240B649E0095557A /* IndicatorPoint.swift */; };
 		227F2913240B649E0095557A /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F290C240B649E0095557A /* LineView.swift */; };
@@ -76,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B6C59E4F657375B282B181A /* Pods_finance_app2.framework in Frameworks */,
+				2271D3612415C2C100D9E0B4 /* NavigationStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +220,7 @@
 			);
 			name = "finance-app2";
 			packageProductDependencies = (
+				2271D3602415C2C100D9E0B4 /* NavigationStack */,
 			);
 			productName = "finance-app2";
 			productReference = 22A3833523BC3441006AC9B4 /* finance-app2.app */;
@@ -248,6 +251,7 @@
 			);
 			mainGroup = 22A3832C23BC3441006AC9B4;
 			packageReferences = (
+				2271D35F2415C2C100D9E0B4 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
 			);
 			productRefGroup = 22A3833623BC3441006AC9B4 /* Products */;
 			projectDirPath = "";
@@ -534,6 +538,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2271D35F2415C2C100D9E0B4 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/biobeats/swiftui-navigation-stack.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2271D3602415C2C100D9E0B4 /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2271D35F2415C2C100D9E0B4 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+			productName = NavigationStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22A3832D23BC3441006AC9B4 /* Project object */;
 }

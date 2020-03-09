@@ -7,39 +7,27 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 struct registerView: View {
-        @State private var number = ""
-        @State private var password = ""
-        @State private var username = ""
-        @State private var name = ""
-        @State private var showLinkTarget = false
-
-        
-        // MARK: - View
+    @State private var number = ""
+    @State private var password = ""
+    @State private var username = ""
+    @State private var name = ""
+    @State private var showLinkTarget = false
+    @State private var isActive = false
+    @State private var isNotActive = false
+    // MARK: - View
     var body: some View {
+        NavigationStackView{
             NavigationView{
                 VStack {
                     Text("Finance App Signup")
                         .font(.largeTitle).foregroundColor(Color.white)
                         .padding([.top, .bottom], 40)
                         .shadow(radius: 10.0, x: 20, y: 10)
+                    // MARK: - Signup Fields
                     
-    //                Image("iosapptemplate")
-    //                    .resizable()
-    //                    .frame(width: 250, height: 250)
-    //                    .clipShape(Circle())
-    //                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
-    //                    .shadow(radius: 10.0, x: 20, y: 10)
-    //                    .padding(.bottom, 50)
-                    
-    //                HStack(){
-    //                    Text("Manage a portfolio")
-    ////                    Spacer()
-    //                    Text("Play against friends")
-    //                }
-    //                .frame(width: 250, height: 440)
-
                     Spacer()
                     VStack(alignment: .leading, spacing: 15) {
                         TextField("Name", text: self.$name)
@@ -65,34 +53,48 @@ struct registerView: View {
                             .cornerRadius(20.0)
                             .shadow(radius: 10.0, x: 20, y: 10)
                     }.padding([.leading, .trailing], 27.5)
-//                    NavigationLink(destination: homepageView().navigationBarBackButtonHidden(true)){
+                    //                    NavigationLink(destination: homepageView().navigationBarBackButtonHidden(true)){
+                    // MARK: - Signup Button
                     Button(action: {loginManager().register(user: User( username:self.username,name: self.name,number: self.number, password: self.password)) { (Response) in
                         print(Response)
                         print("DONE")
                         self.showLinkTarget = true
                         }}) {
-                        Text("Sign Up")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(width: 300, height: 50)
-                            .background(Color.green)
-                            .cornerRadius(15.0)
-                            .shadow(radius: 10.0, x: 20, y: 10)
+                            Text("Sign Up")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.green)
+                                .cornerRadius(15.0)
+                                .shadow(radius: 10.0, x: 20, y: 10)
                     }.padding(.top, 50)
                     NavigationLink(destination: homepageView().navigationBarBackButtonHidden(true), isActive: self.$showLinkTarget ) {
-                       Spacer().fixedSize()
+                        Spacer().fixedSize()
                     }
-//                    }
+                    //                    }
                     Spacer()
                     HStack{
-                        Text("Don't have an account? ")
-                            Button(action: {}) {
-                            NavigationLink(destination: loginView()){
-                                Text("Sign In")
-                                    .foregroundColor(.black)
-                            }
+                        // MARK: - View Switch
+                        Text("Have an account? ")
+                        PushView(destination: loginView(), isActive: $isNotActive) {
+                            Text("")
                         }
+                        PopView(isActive: $isActive){
+                            Text("")
+                        }
+                        Button(action: {
+                            if(loginManager().isInNav){
+                                self.isActive.toggle()
+                                loginManager().isInNav = false
+                            }else{
+                                self.isNotActive.toggle()
+                                loginManager().isInNav = true
+                            }
+                        }, label: {
+                            Text("Login")
+                                .foregroundColor(.black)
+                        })
                     }
                 }
                 .background(
@@ -102,6 +104,7 @@ struct registerView: View {
             }
         }
     }
+}
 
 
 struct registerView_Previews: PreviewProvider {

@@ -14,6 +14,10 @@ import FirebaseAuth
 public class loginManager {
 
     let db = Firestore.firestore()
+    
+    //for alternating views
+    var isInNav = false
+    
 
     public typealias CompletionObject<T> = (_ response: T) -> Void
     
@@ -135,7 +139,4 @@ extension Optional {
     return self != nil
   }
 }
-public enum FirestoreResponse {
-  case success
-  case failure
-}
+

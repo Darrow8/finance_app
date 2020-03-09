@@ -9,16 +9,36 @@
 
 import SwiftUI
 import UIKit
+import NavigationStack
 //import You
 //import YoutubePlayer_in_WKWebView
 //
 struct newsView: View {
+    @State private var isActive = false
+    @State private var isNotActive = false
+
     var body: some View {
-        
-//        VStack{
-            return Text("Hello, World!")
-//        return YoutubeView()
-//        }
+        NavigationStackView {
+            VStack{
+                PushView(destination: searchView(), isActive: $isNotActive) {
+                    Text("PushA")
+                }
+                PopView(isActive: $isActive){
+                    Text("PopA")
+                }
+                Button(action: {
+                    if(loginManager().isInNav){
+                    self.isActive.toggle()
+                    loginManager().isInNav = false
+                    }else{
+                    self.isNotActive.toggle()
+                    loginManager().isInNav = true
+                    }
+                }, label: {
+                    Text("Trigger push")
+                })
+            }
+        }
     }
 }
 

@@ -138,3 +138,7 @@ class firestoreManager {
     }
 }
 
+public enum FirestoreResponse {
+  case success
+  case failure
+}

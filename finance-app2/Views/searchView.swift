@@ -7,16 +7,32 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 struct searchView: View {
+        @State private var isActive = false
+        @State private var isNotActive = false
     var body: some View {
-        NavigationView {
-            VStack{
-                Text("Hello World")
-                NavigationLink(destination: homepageView().navigationBarBackButtonHidden(true)) {
-                    Text("Do Something")
+        NavigationStackView {
+//            VStack{
+                PushView(destination: newsView(), isActive: $isNotActive) {
+                    Text("")
                 }
-            }
+                PopView(isActive: $isActive){
+                    Text("")
+                }
+                Button(action: {
+                    if(loginManager().isInNav){
+                    self.isActive.toggle()
+                    loginManager().isInNav = false
+                    }else{
+                    self.isNotActive.toggle()
+                    loginManager().isInNav = true
+                    }
+                }, label: {
+                    Text("Trigger push")
+                })
+//            }
         }
     }
 }

@@ -15,38 +15,12 @@ struct homepageView: View {
     
     @State private var selectorIndex = 0
     @State private var numbers = ["One","Two","Three"]
-//    var theUser: User = loginManager().login(username: "Darrow H")
-//    private var porty: Portfolio
     @State var data: [Double] = [0,1,2]
     private var graphTimeline: Int = 0
-//   @State var userInfo: User
-//    var userInfo = User.setupUser(User)
     var body: some View {
-        var userInfo: User = User(username: "", name: "", portfolioID: "" )
-        var theData: [Double] = self.data
-        firestoreManager().getUserData(collection: "Users", documentVar: "darrow_h19", documentField: "Username").then{ user in
-//            print(user)
-            userInfo = user
-//            self.data = userInfo.updateStockChart(portfolioID: userInfo.portfolioID)
-            theData = userInfo.updateStockChart(portfolioID: "123456")
-            //LineView.init(data: <#T##[Double]#>, totalPoints: <#T##Int#>)
-//            print(Double(theData[0]))
-//            let chartData: [Int: Int] = userInfo.updateStockChart(portfolioID: "123456")
-//            data = chartData
-            print("HERE3")
-            print(theData)
-        }
-//        self.data = theData
-        print("HERE2")
-        print(theData)
-        return VStack {
-
-//            for reference, there should be 288 totalPoints
-//            self.theUser = loginManager().login(username: "darrow_h19")
-//            if(graphTimeline == 0){
-//                theUser.portfolioID
-                
-            LineView(data: theData, title: "$XYZ", legend: "Hello World",totalPoints: 18,yPosChange: 300)
+        VStack {
+            LineView(data: theData, title: "$XYZ", legend: "Hello World",totalPoints: 18,yPosChange: 150)
+            
 //            }
 //            Text("Hello")
 //
@@ -59,11 +33,7 @@ struct homepageView: View {
         }
 
     }
-//    mutating func prepareGraph(){
-//        theUser = loginManager().login(username: "darrow_h19")
-//        thePortfolio = firestoreManager().getData(collection: "Portfolios", documentVar: self.theUser.portfolioID, documentField: "PortfolioID") as! Portfolio
-//
-//    }
+
     
 }
 

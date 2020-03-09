@@ -112,3 +112,10 @@ struct Portfolio{
 //    var price : Int
 //
 //}
+
+
+class userDataManager{
+    func setGraphData(portID: String){
+        
+    }
+}
